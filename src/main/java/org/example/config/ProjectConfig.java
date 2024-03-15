@@ -23,4 +23,26 @@ public class ProjectConfig {
     Integer value() {
         return 25;
     }
+
+    // Example - 2
+    @Bean
+    Vehicle vehicle1() {
+        var val = new Vehicle();
+        val.setName("Maruti");
+        return val;
+    }
+
+    @Bean
+    Vehicle vehicle2() {
+        var val = new Vehicle();
+        val.setName("Nano");
+        return val;
+    }
+
+    @Bean
+    Vehicle vehicle3() {
+        var val = new Vehicle();
+        val.setName("Kia");
+        return val;
+    }
 }
