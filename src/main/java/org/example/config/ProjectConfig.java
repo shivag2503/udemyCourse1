@@ -45,4 +45,26 @@ public class ProjectConfig {
         val.setName("Kia");
         return val;
     }
+
+    // Example - 3
+    @Bean(name = "marutiVehicle")
+    Vehicle vehicle4() {
+        var val = new Vehicle();
+        val.setName("Maruti");
+        return val;
+    }
+
+    @Bean(value = "nanoVehicle")
+    Vehicle vehicle5() {
+        var val = new Vehicle();
+        val.setName("Nano");
+        return val;
+    }
+
+    @Bean("kiaVehicle")
+    Vehicle vehicle6() {
+        var val = new Vehicle();
+        val.setName("Kia");
+        return val;
+    }
 }
